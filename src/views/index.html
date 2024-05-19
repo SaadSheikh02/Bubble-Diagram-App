@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/titlebar.css">
+  <link rel="stylesheet" href="assets/css/canvas.css">
+  <link rel="stylesheet" href="assets/css/sidebar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <title>Bubbly</title>
+  <script src="../lib/easeljs-NEXT.js"></script>
+</head>
+<body onload="init()">
+  <div class="titlebar">
+    <div class="titlebar-section" id="left"></div>
+    <div class="titlebar-section" id="center">
+      <div class="workbook-name">Untitled Workbook</div>
+    </div>
+    <div class="titlebar-section" id="right"></div>
+  </div>
+  <div class="canvas-wrapper">
+    <canvas></canvas>
+    <div class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Nodes</div>
+        <div class="sidebar-section-body">
+          <!-- Circle -->
+          <div class="node" id="circle">
+            <div class="node-icon" id="circle">
+              <img class="node-icon-img" src="assets/img/nodes/circle.png" alt="Circle" id="CIRCLE">
+            </div>
+            <div class="node-name" id="circle">Circle</div>
+          </div>
+          <!-- Bubble 1 -->
+          <!-- <div class="node" id="bubble">
+            <div class="node-icon" id="bubble-1">
+              <img class="node-icon-img" src="assets/img/nodes/bubble-1.png" alt="Bubble 1" id="BUBBLE_1">
+            </div>
+            <div class="node-name" id="bubble-1">Bubble</div>
+          </div> -->
+          <!-- Bubble 2 -->
+          <!-- <div class="node" id="bubble-2">
+            <div class="node-icon" id="bubble-2">
+              <img class="node-icon-img" src="assets/img/nodes/bubble-2.png" alt="Bubble 2" id="BUBBLE_2">
+            </div>
+            <div class="node-name" id="bubble-2">Bubble 2</div>
+          </div> -->
+          <!-- Rectangle -->
+          <div class="node" id="rectangle">
+            <div class="node-icon" id="rectangle">
+              <img class="node-icon-img" src="assets/img/nodes/rectangle.png" alt="Rectangle" id="RECTANGLE">
+            </div>
+            <div class="node-name" id="rectangle">Rectangle</div>
+          </div>
+          <!-- Diamond -->
+          <div class="node" id="diamond">
+            <div class="node-icon" id="diamond">
+              <img class="node-icon-img" src="assets/img/nodes/diamond.png" alt="Diamond" id="DIAMOND">
+            </div>
+            <div class="node-name" id="diamond">Diamond</div>
+          </div>
+          <!-- Text -->
+          <!-- <div class="node" id="text">
+            <div class="node-icon" id="text">
+              <img class="node-icon-img" src="assets/img/nodes/text.png" alt="Text" id="TEXT">
+            </div>
+            <div class="node-name" id="text">Text</div>
+          </div> -->
+          
+        </div>
+      </div>
+      <p>Click to add shape to canvas.</p>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/canvas.js"></script>
+  <script src="assets/js/model/Model.js"></script>
+</body>
+</html>
